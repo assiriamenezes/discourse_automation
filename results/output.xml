@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.6 on win32)" generated="20210718 17:56:27.110" rpa="false" schemaversion="2">
+<suite id="s1" name="Demo-Tests" source="C:\prova\demo-automation\tests\demo-tests.robot">
+<test id="s1-t1" name="Scenario 1: Open the Demo page">
+<kw name="Given the user is in 'Demo' page" library="bdd" sourcename="Given ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The user is in 'Demo' page" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210718 17:56:27.333" level="INFO">Opening browser 'chrome' to base url 'https://www.discourse.org/'.</msg>
+<status status="PASS" starttime="20210718 17:56:27.333" endtime="20210718 17:56:33.387"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210718 17:56:33.388" endtime="20210718 17:56:33.511"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:27.332" endtime="20210718 17:56:33.511"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:27.332" endtime="20210718 17:56:33.511"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:27.332" endtime="20210718 17:56:33.511"/>
+</kw>
+<kw name="And the user click in the 'Demo' button in header page" library="bdd" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The user click in the 'Demo' button in header page" library="keywords">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${DEMO_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210718 17:56:33.514" level="INFO">Clicking element '//*[@id="main"]/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20210718 17:56:33.513" endtime="20210718 17:56:33.603"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:33.513" endtime="20210718 17:56:33.603"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:33.512" endtime="20210718 17:56:33.603"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:33.512" endtime="20210718 17:56:33.604"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210718 17:56:35.614" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210718 17:56:33.604" endtime="20210718 17:56:35.614"/>
+</kw>
+<kw name="And the 'Demo page' is visible" library="bdd" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'Demo page' is visible" library="keywords">
+<kw name="Switch Window" library="Selenium2Library">
+<arg>Demo</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20210718 17:56:35.614" endtime="20210718 17:56:36.247"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:35.614" endtime="20210718 17:56:36.247"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:35.614" endtime="20210718 17:56:36.247"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:35.614" endtime="20210718 17:56:36.247"/>
+</kw>
+<kw name="When the user scroll the page to the end" library="bdd" sourcename="When ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The user scroll the page to the end" library="keywords">
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>window.scrollBy(0,3000);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20210718 17:56:36.251" level="INFO">Executing JavaScript:
+window.scrollBy(0,3000);
+Without any arguments.</msg>
+<status status="PASS" starttime="20210718 17:56:36.249" endtime="20210718 17:56:36.256"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210718 17:56:38.262" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210718 17:56:36.256" endtime="20210718 17:56:38.262"/>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>window.scrollBy(0,3000);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20210718 17:56:38.263" level="INFO">Executing JavaScript:
+window.scrollBy(0,3000);
+Without any arguments.</msg>
+<status status="PASS" starttime="20210718 17:56:38.262" endtime="20210718 17:56:38.268"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:36.248" endtime="20210718 17:56:38.268"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:36.248" endtime="20210718 17:56:38.269"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:36.247" endtime="20210718 17:56:38.269"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210718 17:56:43.274" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210718 17:56:38.270" endtime="20210718 17:56:43.274"/>
+</kw>
+<kw name="When the 'title'should be print in console" library="bdd" sourcename="When ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'title' should be print in console" library="keywords">
+<kw name="Log To Console" library="BuiltIn">
+<arg>//*[@id="ember131"]/td[1]/span</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210718 17:56:43.277" endtime="20210718 17:56:43.278"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:43.276" endtime="20210718 17:56:43.278"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:43.276" endtime="20210718 17:56:43.278"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:43.275" endtime="20210718 17:56:43.278"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:27.331" endtime="20210718 17:56:43.279"/>
+</test>
+<kw name="Close Browser" library="Selenium2Library" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210718 17:56:43.281" endtime="20210718 17:56:45.582"/>
+</kw>
+<status status="PASS" starttime="20210718 17:56:27.111" endtime="20210718 17:56:45.582"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo-Tests">Demo-Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210718 17:56:27.143" level="ERROR">Error in file 'C:\prova\demo-automation\resources\keywords.robot' on line 4: Setting 'Suite Teardown' is not allowed in resource file.</msg>
+</errors>
+</robot>
